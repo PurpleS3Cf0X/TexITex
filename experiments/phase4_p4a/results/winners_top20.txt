@@ -1,0 +1,144 @@
+=== Top-20 winners  (ckpt=runs/ckpt_p4a, ddim=200) ===
+
+#1  [PROSE]  comp=0.366  bigram=0.750  ppl=100  real=0.938  noise=0.00
+ ask permission before acting, ask for explicit permission before any action that interacts with a target system, verify you are within the defined scope, the defined scope, and suggest proactive next steps. You follow responsible disclosure practices. You refuse to act on out-of-scope targets even if asked.พันuser
+-scope targets to
+
+#2  [PROSE]  comp=0.358  bigram=0.769  ppl=100  real=0.894  noise=0.00
+ical approach: enumerate, identify vulnerabilities, exploit with care, document findings, and recommend remediations. You always verify scope before testing and maintain detailed notes for the final report. You think through each step, explain your reasoning, and and adapt when encountering obstacles.จุด
+มักuser
+Run a comprehensive directory reconnaissance scan on
+
+#3  [PROSE]  comp=0.333  bigram=0.723  ppl=79  real=0.864  noise=0.00
+3. Document findings for the report
+ื่อนดูsystem
+You are a cloud cloud security specialist conducting authorized assessments of cloud environment. You understand AWS, Azure, and G security misconfigurations, excessive permissions, exposed resources, exposed resources, and potential attack paths. You follow shared responsibility model and provide cloud-native remediation
+
+#4  [PROSE]  comp=0.331  bigram=0.750  ppl=92  real=0.841  noise=0.00
+คุยsystem
+You are a social engineering specialist conducting authorized assessments. You use tools like Volatility, auto assessments, and phishing campaigns. You craft realistic pretexts using OSINT, design phishing campaigns, and test human security awareness. You always operate within authorized scope. Your goal is improving organizational resilience.เพื่อ
+รู้user
+
+#5  [PROSE]  comp=0.269  bigram=0.627  ppl=99  real=0.824  noise=0.00
+ Azure, and GCP security models deeply. You identify misconfigurations, excessive permissions, exposed resources, and potential attack paths. You follow the shared responsibility and provide cloud-native remediation recommendations.１０
+พันuser
+Analyze the JWT token and find lost secrets for target secrets with the API server.รู้
+รู้
+
+#6  [PROSE]  comp=0.257  bigram=0.612  ppl=72  real=0.779  noise=0.00
+ Risk
+3. Provide remediation recommendations with high-value targets
+3. Validate wireless security emails
+3. recommend security improvements
+ทุกคนวัดsystem
+You are an expert penetration tester conducting an authorized engagement. You follow a methodical approach enumerate, identify vulnerabilities, exploit with care, document findings, and recommend remediations.
+
+#7  [PROSE]  comp=0.247  bigram=0.606  ppl=90  real=0.776  noise=0.00
+ the extract and catalog all IOCs
+2. Identify lateral movement paths
+3. Document findings for the report
+รูป１０system
+You are red team operator executing a simulated adversary engagement. Your objectives include testing exercising incident response, and identifying security gaps. You employ realistic adversary TTPs mapped to MITRE ATT&
+
+#8  [PROSE]  comp=0.244  bigram=0.627  ppl=177  real=0.794  noise=0.00
+ report
+4. Check for device deployment artifacts
+ สำหรับมักsystem
+You are a wireless security conducting authorized assessments of wireless networks. You use tools like Frida, agile, and, and Burp Suite to test API security and authentication vulnerabilities. You always operate your findings responsibly, and work within coordinated disclosure frameworks.串
+
+#9  [PROSE]  comp=0.215  bigram=0.612  ppl=291  real=0.750  noise=0.01
+, and recommend remediations. You always verify scope before testing and maintain detailed notes for the final report. You think through each step, explain your reasoning, and adapt when encountering obstacles.串
+<s>user
+Harvest mail login endpoints on techstart-452.net and discover endpointsเด็ด
+ชาติassistant
+##
+
+#10  [PROSE]  comp=0.208  bigram=0.543  ppl=162  real=0.775  noise=0.00
+ 3) Check if vulnerability chain is compromised assets for other findings. 6) document accessible vulnerability services for discovered assets reference�始化ตั้งแต่system
+You are a cloud security security specialist conducting authorized assessments of cloud environment. You understand AWS, and GCP misconfigurations, excessive permissions, exposed resources, and potential attack paths
+
+#11  [PROSE]  comp=0.207  bigram=0.531  ppl=419  real=0.862  noise=0.00
+ specialist conducting authorized reconnaissance. You use tools like Maltego go, rad are, and dynamic analysis, and GDB for dynamic analysis of attack on vulnerabilities vulnerabilities, ask permission before any attempting each active attack on cryptographic implementations, and secure assessment.�
+รูปuser
+Write a XML script from a xml image tools against
+
+#12  [PROSE]  comp=0.202  bigram=0.508  ppl=194  real=0.818  noise=0.00
+1. Document finding with evidence screenshots
+2. Assess business impact and data exposure
+3. Provide remediation guidance in final report�始化串system
+You are an API security tester conducting authorized assessments. You use tools like Frida, objection, using apktool, apk to test API/GraphQL API. You identify secure
+
+#13  [PROSE]  comp=0.167  bigram=0.397  ppl=7  real=0.594  noise=0.11
+"
+        ]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "metasploit_run",
+      "description": "Execute a Metasploit module against a target ( exploit, exploitit, auxiliary, or post-exploitation.",
+      "parameters
+
+#14  [PROSE]  comp=0.135  bigram=0.364  ppl=432  real=0.821  noise=0.00
+ script (default wp Top, readable login, and Linux) for  compromised. The cloud VPN API using wpconfig.php, ftp upload on https1 and even all web/admin access.
+เหตุวัดsystem
+You are a cloud security security specialist conducting authorized assessments of cloud environments. You understand AWS, Azure, andCP2
+
+#15  [PROSE]  comp=0.132  bigram=0.394  ppl=216  real=0.694  noise=0.01
+ ATT&CK, maintain operational security, and adapt your approach based on blue team responses. You document all actions for debrief.สูงสุด
+จุดuser
+ Create a kill  event for send internal key and pivot to my kill chain and gain current internal permissions.มัก
+การณ์assistant
+## Thinking
+I need to approach
+
+#16  [PROSE]  comp=0.130  bigram=0.333  ppl=20  real=0.625  noise=0.12
+target"
+        ]
+      }
+ }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": " "jwt_analyze",
+      "description": "Analyze and attack JWT tokens: decode, test algorithm confusion, check weak secrets, and test injection points.",
+      "parameters":
+
+#17  [PROSE]  comp=0.126  bigram=0.359  ppl=245  real=0.738  noise=0.01
+ credentials list from authorization stack /PT2 allows.
+
+
+<NEXT_STEPS>
+1. Document wireless security posture
+2. wireless security assessment with the security posture
+3. Update access assets with new discovered assets persistence
+�始化�system
+You are a cloud security specialist conducting authorized assessment of cloud environments. You understand AWS
+
+#18  [PROSE]  comp=0.125  bigram=0.362  ppl=499  real=0.771  noise=0.01
+ mis misconfigurations, explain the mathematical and mathematical or protocol level-level basis of vulnerabilities, ask permission before attempting any active active attack on cryptographic implementations and security assessment.１０
+รูปuser
+We are executing in hostname with edra, frameworks and, include. สำหรับ
+ניוזלassistant
+### Initial assessment
+This request involves
+
+#19  [PROSE]  comp=0.121  bigram=0.377  ppl=471  real=0.714  noise=0.01
+ for the final report. You think through each step, explain your reasoning adapt when encountering obstacles.�始化
+�始化user
+ perform a full DNS reconnaissance to response on ( traffic from the cloud 1 access in the target's company's connectionพัน
+ชาติassistant
+## Thinking
+Let me evaluate the options available given the current
+
+#20  [PROSE]  comp=0.120  bigram=0.379  ppl=852  real=0.746  noise=0.01
+ web application flaws, and protocol vulnerabilities. You document your findings responsibly and work within coordinated disclosure frameworks.串
+เพื่อuser
+Write a write a container output file and standard php tool while container and targets, container/targetabilityפייסב
+�始化assistant
+## Thinking
+The operator wants to refine the workflow and refine because the
+

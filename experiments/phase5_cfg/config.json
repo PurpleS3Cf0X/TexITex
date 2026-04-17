@@ -1,0 +1,47 @@
+{
+  "_comment": "Phase 5 Feature 3: Classifier-Free Guidance (CFG)",
+  "_date": "April 2026",
+  "_status": "Fine-tuning in progress from P4-A best.pt",
+
+  "motivation": "Condition the DiT on a prompt embedding to steer what kind of text comes out. E.g., conditioning on 'red team TTP' vs 'defensive playbook' prompt embeddings to generate domain-targeted text.",
+
+  "architecture_changes": {
+    "ConditionProjector": "2-layer MLP: Linear(1536,512) → SiLU → Linear(512,512)",
+    "conditioning": "cond_embed added to timestep conditioning c: c = time_embed(t) + cond_proj(mean_pool_tokens)",
+    "null_condition": "zeros (B, 1536) tensor — model learns to generate without conditioning",
+    "training_dropout": "15% of training samples get null_condition (cfg_dropout=0.15)"
+  },
+
+  "cfg_inference": {
+    "formula": "noise_pred = noise_uncond + guidance_scale * (noise_cond - noise_uncond)",
+    "guidance_scale_1.0": "unconditional generation (same as P4-A)",
+    "guidance_scale_3.0": "moderate guidance",
+    "guidance_scale_7.0": "strong guidance (may reduce diversity)"
+  },
+
+  "base_model": {
+    "source": "runs/ckpt_p4a/best.pt",
+    "epoch": 200,
+    "loaded_params": "all except cond_proj.* (new CFG layers initialized fresh)"
+  },
+
+  "training": {
+    "script": "finetune_cfg.py",
+    "num_epochs": 100,
+    "lr": 5e-5,
+    "batch_size": 32,
+    "cfg_null_dropout": 0.15,
+    "optimizer": "AdamW",
+    "save_every": 10,
+    "checkpoint_dir": "runs/ckpt_p5_cfg"
+  },
+
+  "training_command": "/usr/bin/python3 finetune_cfg.py --teacher_ckpt runs/ckpt_p4a/best.pt --out_dir runs/ckpt_p5_cfg --num_epochs 100 --lr 5e-5 --batch_size 32",
+
+  "logs": {
+    "training": "runs/p5_cfg_finetune.log"
+  },
+
+  "inference_command": "# After training, use generate.py with cfg_scale > 1.0 and a prompt embedding",
+  "prompt_encoding": "mean-pool Qwen token embeddings over the prompt → (1, 1536) conditioning vector"
+}

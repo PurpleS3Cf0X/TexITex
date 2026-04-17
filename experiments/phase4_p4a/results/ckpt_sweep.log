@@ -1,0 +1,78 @@
+/Users/r3d0ne/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+=== Checkpoint sweep: epochs [50, 100, 150, 200, 250, 300]  x 16 samples each, 200 DDIM ===
+[Dataset] Loading tokenizer: Qwen/Qwen2.5-1.5B
+[Dataset] Loading embedding weights from Qwen/Qwen2.5-1.5B
+[Dataset] Embedding table: vocab=151936, d_model=1536
+[Dataset] Loading cached images from data_cache/images_security_vqgan-tokence_big_long_64_64_1_50000_gnorm.npz
+[VQ-GAN] Encoder: 6.43M, Decoder: 11.12M, VQ: 16K, Total: 17.57M (bottleneck=vq)
+[Dataset] Loaded 50000 cached samples
+
+
+=== P4-A ckpt epoch=50  (ckpt_epoch0050.pt) ===
+[DiT] 57.8M parameters (depth=12, dim=512, heads=8, patches=64, patch_size=2)
+[Generate] Loaded EMA weights (backbone=dit)
+[Generate] Sampling 16 images, shape=(16, 16, 16), DDIM steps=200, extras=['pos', 'boundary', 'self_cond']
+   wrote runs/dit_p4a_ep050.log
+   first sample preview: ",
+     ",
+ "description": " target using IP target community on test against a target sub target, target and the exposures.",
+ target      parameters
+
+
+=== P4-A ckpt epoch=100  (ckpt_epoch0100.pt) ===
+[DiT] 57.8M parameters (depth=12, dim=512, heads=8, patches=64, patch_size=2)
+[Generate] Loaded EMA weights (backbone=dit)
+[Generate] Sampling 16 images, shape=(16, 16, 16), DDIM steps=200, extras=['pos', 'boundary', 'self_cond']
+   wrote runs/dit_p4a_ep100.log
+   first sample preview:  attack and XML. The weak phishing exposed credentials to be agent is enabling WPA security tools with unauthorized secret document requires vulnerabi
+
+
+=== P4-A ckpt epoch=150  (ckpt_epoch0150.pt) ===
+[DiT] 57.8M parameters (depth=12, dim=512, heads=8, patches=64, patch_size=2)
+[Generate] Loaded EMA weights (backbone=dit)
+[Generate] Sampling 16 images, shape=(16, 16, 16), DDIM steps=200, extras=['pos', 'boundary', 'self_cond']
+   wrote runs/dit_p4a_ep150.log
+   first sample preview: Inputdomains -> query web monitoringHandler, new	kNT:: null query source, source path);
+	use source allows object:: dataManager, WorkflowManager);
+	 r
+
+
+=== P4-A ckpt epoch=200  (ckpt_epoch0200.pt) ===
+[DiT] 57.8M parameters (depth=12, dim=512, heads=8, patches=64, patch_size=2)
+[Generate] Loaded EMA weights (backbone=dit)
+[Generate] Sampling 16 images, shape=(16, 16, 16), DDIM steps=200, extras=['pos', 'boundary', 'self_cond']
+   wrote runs/dit_p4a_ep200.log
+   first sample preview: ": "target port"
+          },
+          "target port": {
+            "type": "string",
+            "description": " payload (e.g., ' exploitit/windows
+
+
+=== P4-A ckpt epoch=250  (ckpt_epoch0250.pt) ===
+[DiT] 57.8M parameters (depth=12, dim=512, heads=8, patches=64, patch_size=2)
+[Generate] Loaded EMA weights (backbone=dit)
+[Generate] Sampling 16 images, shape=(16, 16, 16), DDIM steps=200, extras=['pos', 'boundary', 'self_cond']
+   wrote runs/dit_p4a_ep250.log
+   first sample preview: ": "boolean",
+            "description": "Enumerate shares"
+          }
+        },
+        "required": [
+          "target_url"
+        ]
+      }
+    
+
+
+=== P4-A ckpt epoch=300  (ckpt_epoch0300.pt) ===
+[DiT] 57.8M parameters (depth=12, dim=512, heads=8, patches=64, patch_size=2)
+[Generate] Loaded EMA weights (backbone=dit)
+[Generate] Sampling 16 images, shape=(16, 16, 16), DDIM steps=200, extras=['pos', 'boundary', 'self_cond']
+   wrote runs/dit_p4a_ep300.log
+   first sample preview:  each tool call, return a JSON object with the arguments within  withinรู้บันเท XML tags:
+סּ
+{"name": "function-name>", "arguments": <args-json-object>
+
+=== ckpt sweep done ===

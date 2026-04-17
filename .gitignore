@@ -1,0 +1,17 @@
+# No model checkpoints or data
+*.pt
+*.pth
+*.npy
+*.npz
+*.h5
+
+# No Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# macOS
+.DS_Store
+
+# Logs generated at runtime (results/ logs are intentionally committed)
+nohup.out

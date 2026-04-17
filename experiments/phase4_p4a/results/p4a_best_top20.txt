@@ -1,0 +1,139 @@
+=== Top-20 winners  (ckpt=runs/ckpt_p4a, ddim=200) ===
+
+#1  [PROSE]  comp=0.372  bigram=0.831  ppl=102  real=0.864  noise=0.00
+ a simulated adversary engagement. Your objectives include testing detection capabilities, exercising incident response, identifying security gaps. You employ realistic adversary TTPs mapped to MITRE ATT&CK, maintain operational security, and adapt your approach based on blue team responses. You document all all actions for for the debrief.ื่อน
+รู้user
+
+#2  [PROSE]  comp=0.303  bigram=0.667  ppl=144  real=0.906  noise=0.00
+ have all findings within authorized scope
+2. Start target scanning of high-value Cif-value hosts
+串 ForCanBeConvertedToFsystem
+You are an expert cybersecurity assistant with access with access access to security tools for authorized penetration testing and security assessments. You use tools methodically to gather information, test vulnerabilities, and document findings within authorized scope
+
+#3  [PROSE]  comp=0.298  bigram=0.662  ppl=98  real=0.864  noise=0.00
+ deeper into the the findings
+3. document results for the report
+การณ์ ForCanBeConvertedToFsystem
+You are a cloud security specialist conducting conducting authorized assessments of cloud environments. You understand AWS, Azure, and and GCP security models deeply and security models deeply. You identify misconfigurations excessive permission, exposed resources, and potential attack
+
+#4  [PROSE]  comp=0.240  bigram=0.594  ppl=193  real=0.831  noise=0.00
+ within the attack vectors
+3. Start target scanning of target networkวัดนิsystem
+You are an API security tester conducting authorized assessments. You use tools like Frida, GraphQL,, and G2 SQL for static and dynamic analysis, application flaws, and protocol vulnerabilities. You always have defined scope, operate within authorized available
+
+#5  [PROSE]  comp=0.231  bigram=0.537  ppl=80  real=0.809  noise=0.00
+ timeline and findings
+3. Continue with deeper analysis of the findings
+3. continue with deeper analysis of the findings
+�始化เว็บไซsystem
+You are a mobile application security tester conducting authorized assessments. You use tools like Frid, objection, and apk tool, and static, GraphQL, and dynamic analysis. You follow OWASP
+
+#6  [PROSE]  comp=0.215  bigram=0.552  ppl=125  real=0.765  noise=0.00
+
+4. Verify all findings manually
+2. Assess business impact and discovered hosts
+3. Start target scanning of high-value hosts
+�始化�始化system
+You are a team operator executing a simulated adversary engagement. Your objectives include testing detection capabilities, exercising incident response, exercising incident, and identifying security gaps. You employ realistic
+
+#7  [PROSE]  comp=0.213  bigram=0.562  ppl=261  real=0.800  noise=0.00
+ with the corrected approaching
+รู้�system
+You are a mobile application application wireless security tester conducting authorized assessments. You use tools like Ghidr, Frida, and tools, and weak encrypted to test weak authentication, and protocol vulnerabilities. You work within coordinated disclosure frameworks.串
+１０user
+Test the CVE
+
+#8  [PROSE]  comp=0.211  bigram=0.569  ppl=426  real=0.818  noise=0.00
+ with mail API keys is done 20 archives for storage and auth read.
+串１０system
+You are an expert cybersecurity assistant with security tools for authorized penetration testing. You assessment a develop proof-of memory corruption, web application flaws, and protocol vulnerabilities. You document your findings work within coordinated disclosure frameworks.串
+พัน
+
+#9  [PROSE]  comp=0.205  bigram=0.524  ppl=267  real=0.828  noise=0.00
+2. Document with detection evidence
+3. Prepare forensic
+ค้านิsystem
+You are an API security specialist conducting authorized bin vishing assessment. You use tools like Frida, cryptographic, and GraphQL/h for static, and GraphQL and static, injection data. You identify authentication bypass vulnerabilities. You identify OWASP Mobile
+
+#10  [PROSE]  comp=0.203  bigram=0.537  ppl=245  real=0.794  noise=0.00
+
+สูงสุดรู้system
+You are a web application security application securityassistant for authorized security assessment. You must identify misconfigurations, excessive permissions, and potential attack resources, exposed and potential attack paths. You follow the shared responsibly work within coordinated disclosure frameworks.�
+ניוזלuser
+ Write an access database storage to query additional
+
+#11  [PROSE]  comp=0.198  bigram=0.485  ppl=265  real=0.866  noise=0.00
+ use, and GraphQL, K3 and API vulnerabilities. You identify OWASP API keys, weak authentication, and OW, and weak encryption. You bypass vulnerabilities. You always operate within authorized scope of the engagement.รู้
+ชาติuser
+ test the email addresses and login endpoint using email upload and email credentials "admin' and
+
+#12  [PROSE]  comp=0.176  bigram=0.460  ppl=178  real=0.781  noise=0.00
+TP data to wireless 
+3. Create persistence network segmentation from organization previous
+2. Document the services on the accessible systems
+3. Document wireless security posture
+3. Schedule lateral movement for the scanรู้�system
+You are a mobile application application security tester conducting authorized assessments. You use tools like Frida,
+
+#13  [PROSE]  comp=0.166  bigram=0.403  ppl=214  real=0.853  noise=0.00
+ work with coordinated disclosure frameworks.พัน
+ปัuser
+The API endpoints to API endpoints, and exposed storage exposed, and store storage, credentials storage, and storage all store entries. Using SQL storage and API key in the storage, database, and API keys, encryption keys - This can expose data stored and sensitive
+ชาติ
+
+#14  [PROSE]  comp=0.162  bigram=0.415  ppl=438  real=0.864  noise=0.00
+ document results for the assessment report
+4. Go faster in on phase if clear
+�始化פייסבsystem
+You are a Cryptographic securityassistant for authorized security assessments. You must assessment. You must explain the psychological boundaries of permission, ask permission ethical boundaries, and always continue within permission boundaries of each action, and legal boundaries
+
+#15  [PROSE]  comp=0.157  bigram=0.455  ppl=503  real=0.776  noise=0.01
+RE ATT&CK, maintain operational security, and adapt your approach based blue team responses. You document all actions for the debrief.טלוו
+เด็ดuser
+Read the compromised interface file from Apache service, available on the credentials ownerดู
+จุดassistant
+## Thinking
+I need to think about operational security security here.
+
+#16  [PROSE]  comp=0.156  bigram=0.333  ppl=208  real=0.969  noise=0.00
+ including stored database auth, and a second input, theapi using an API storage, username, SSLconfig, and file file, and storage for database file. The deleted database is an app stored, storage logs, and a git file. The reveals public storage in stored file and stored including the password storage. API permissions
+
+#17  [PROSE]  comp=0.147  bigram=0.394  ppl=80  real=0.701  noise=0.02
+648.net complete. Findings prioritized by severity.
+
+
+**Follow-up:**
+1. Verify critical findings manually
+2. Assess the findings manually
+3. Map the attack paths
+3. Document findings for the report
+ชาติพันsystem
+You are an API security tester conducting authorized assessments. You use tools
+
+#18  [PROSE]  comp=0.147  bigram=0.449  ppl=295  real=0.700  noise=0.02
+, test web application flaws, and protocol vulnerabilities. You document your findings responsibly, and work within coordinated disclosure frameworks.串
+ แต่user
+Analyze the API login endpoints on https://target test-180.net to discover hidden endpoints and WordPress config vulnerabilities.เว็บไซ
+การณ์assistant
+### Initial assessment
+Before proceeding
+
+#19  [PROSE]  comp=0.132  bigram=0.448  ppl=668  real=0.676  noise=0.02
+map to and MITRE ATT&CK: T3 to identify web, application flaws, and authorized protocol vulnerabilities. You explain your findings responsibly responsibly and work within coordinated disclosure frameworks.１０
+รู้user
+Run [n is https:// example-339.io auth login for the SQL injectionניוזל
+�始化assistant
+
+
+#20  [PROSE]  comp=0.118  bigram=0.270  ppl=4  real=0.578  noise=0.15
+ "parameters": {
+        "type": "object",
+        "properties": "target": {
+          "target": {
+            "type": "string",
+            "description": "Target IP, range, or hostname"
+          },
+          "target port": {
+            "type": "string",
+            "description": "
+

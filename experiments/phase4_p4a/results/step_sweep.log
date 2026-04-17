@@ -1,0 +1,57 @@
+/Users/r3d0ne/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+=== Step-count sweep: [100, 150, 300, 400]  x 8 samples each ===
+[Dataset] Loading tokenizer: Qwen/Qwen2.5-1.5B
+[Dataset] Loading embedding weights from Qwen/Qwen2.5-1.5B
+[Dataset] Embedding table: vocab=151936, d_model=1536
+[Dataset] Loading cached images from data_cache/images_security_vqgan-tokence_big_long_64_64_1_50000_gnorm.npz
+[VQ-GAN] Encoder: 6.43M, Decoder: 11.12M, VQ: 16K, Total: 17.57M (bottleneck=vq)
+[Dataset] Loaded 50000 cached samples
+
+
+=== DDIM steps = 100 ===
+[DiT] 57.8M parameters (depth=12, dim=512, heads=8, patches=64, patch_size=2)
+[Generate] Loaded EMA weights (backbone=dit)
+[Generate] Sampling 8 images, shape=(16, 16, 16), DDIM steps=100, extras=['pos', 'boundary', 'self_cond']
+   wrote runs/dit_p4a_100steps.log
+   first sample preview:  "enum": [
+                "LoggedOn",
+                " container",
+                " container",
+                "RDP",
+                "DCOM",
+    
+
+
+=== DDIM steps = 150 ===
+[DiT] 57.8M parameters (depth=12, dim=512, heads=8, patches=64, patch_size=2)
+[Generate] Loaded EMA weights (backbone=dit)
+[Generate] Sampling 8 images, shape=(16, 16, 16), DDIM steps=150, extras=['pos', 'boundary', 'self_cond']
+   wrote runs/dit_p4a_150steps.log
+   first sample preview:  return a JSON object with the function thefunction name and arguments within รู้串เพื่อ XML tags:
+ชาติ
+{"name": "<function-name>", "arguments": <args-
+
+
+=== DDIM steps = 300 ===
+[DiT] 57.8M parameters (depth=12, dim=512, heads=8, patches=64, patch_size=2)
+[Generate] Loaded EMA weights (backbone=dit)
+[Generate] Sampling 8 images, shape=(16, 16, 16), DDIM steps=300, extras=['pos', 'boundary', 'self_cond']
+   wrote runs/dit_p4a_300steps.log
+   first sample preview:  "
+ http stored="www loading file http="www access="url/uploads url "html: input=" http://www/file url: https/uploads/www /
+ http/json/uploads
+ header
+
+
+=== DDIM steps = 400 ===
+[DiT] 57.8M parameters (depth=12, dim=512, heads=8, patches=64, patch_size=2)
+[Generate] Loaded EMA weights (backbone=dit)
+[Generate] Sampling 8 images, shape=(16, 16, 16), DDIM steps=400, extras=['pos', 'boundary', 'self_cond']
+   wrote runs/dit_p4a_400steps.log
+   first sample preview:  /.txt www.com root root
+/ url root www.html | web root/ root,/home html/s.xml html / root //html HTML / url root
+0
+ root/home/s/b.php/my root/1 root/
+
+=== sweep done ===

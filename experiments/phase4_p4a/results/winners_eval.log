@@ -1,0 +1,143 @@
+[wait] 500-step gen done at Thu Apr 16 17:42:40 IST 2026
+/Users/r3d0ne/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+=== Winner eval: ckpt=runs/ckpt_p4a  ddim=200  num=64 ===
+[Dataset] Loading tokenizer: Qwen/Qwen2.5-1.5B
+[Dataset] Loading embedding weights from Qwen/Qwen2.5-1.5B
+[Dataset] Embedding table: vocab=151936, d_model=1536
+[Dataset] Loading cached images from data_cache/images_security_vqgan-tokence_big_long_64_64_1_50000_gnorm.npz
+[VQ-GAN] Encoder: 6.43M, Decoder: 11.12M, VQ: 16K, Total: 17.57M (bottleneck=vq)
+[Dataset] Loaded 50000 cached samples
+[DiT] 57.8M parameters (depth=12, dim=512, heads=8, patches=64, patch_size=2)
+[Generate] Loaded EMA weights (backbone=dit)
+
+[1/3] Generating 64 samples...
+[Generate] Sampling 64 images, shape=(16, 16, 16), DDIM steps=200, extras=['pos', 'boundary', 'self_cond']
+   -> 64 decoded
+   log -> runs/dit_p4a_winners.log
+
+[2/3] Building bigram table + loading Qwen2.5-1.5B for PPL...
+   bigrams: 20921
+
+[3/3] Ranking top-20 by composite score...
+#1  [PROSE]  comp=0.366  bigram=0.750  ppl=100  real=0.938  noise=0.00
+   ask permission before acting, ask for explicit permission before any action that interacts with a target system, verify you are within the defined scope, the defined scope, and su
+
+#2  [PROSE]  comp=0.358  bigram=0.769  ppl=100  real=0.894  noise=0.00
+  ical approach: enumerate, identify vulnerabilities, exploit with care, document findings, and recommend remediations. You always verify scope before testing and maintain detailed n
+
+#3  [PROSE]  comp=0.333  bigram=0.723  ppl=79  real=0.864  noise=0.00
+  3. Document findings for the report
+ื่อนดูsystem
+You are a cloud cloud security specialist conducting authorized assessments of cloud environment. You understand AWS, Azure, and G 
+
+#4  [PROSE]  comp=0.331  bigram=0.750  ppl=92  real=0.841  noise=0.00
+  คุยsystem
+You are a social engineering specialist conducting authorized assessments. You use tools like Volatility, auto assessments, and phishing campaigns. You craft realistic pr
+
+#5  [PROSE]  comp=0.269  bigram=0.627  ppl=99  real=0.824  noise=0.00
+   Azure, and GCP security models deeply. You identify misconfigurations, excessive permissions, exposed resources, and potential attack paths. You follow the shared responsibility a
+
+#6  [PROSE]  comp=0.257  bigram=0.612  ppl=72  real=0.779  noise=0.00
+   Risk
+3. Provide remediation recommendations with high-value targets
+3. Validate wireless security emails
+3. recommend security improvements
+ทุกคนวัดsystem
+You are an expert penetr
+
+#7  [PROSE]  comp=0.247  bigram=0.606  ppl=90  real=0.776  noise=0.00
+   the extract and catalog all IOCs
+2. Identify lateral movement paths
+3. Document findings for the report
+รูป１０system
+You are red team operator executing a simulated adversary engag
+
+#8  [PROSE]  comp=0.244  bigram=0.627  ppl=177  real=0.794  noise=0.00
+   report
+4. Check for device deployment artifacts
+ สำหรับมักsystem
+You are a wireless security conducting authorized assessments of wireless networks. You use tools like Frida, agil
+
+#9  [PROSE]  comp=0.215  bigram=0.612  ppl=291  real=0.750  noise=0.01
+  , and recommend remediations. You always verify scope before testing and maintain detailed notes for the final report. You think through each step, explain your reasoning, and adap
+
+#10  [PROSE]  comp=0.208  bigram=0.543  ppl=162  real=0.775  noise=0.00
+   3) Check if vulnerability chain is compromised assets for other findings. 6) document accessible vulnerability services for discovered assets reference�始化ตั้งแต่system
+You are a c
+
+#11  [PROSE]  comp=0.207  bigram=0.531  ppl=419  real=0.862  noise=0.00
+   specialist conducting authorized reconnaissance. You use tools like Maltego go, rad are, and dynamic analysis, and GDB for dynamic analysis of attack on vulnerabilities vulnerabil
+
+#12  [PROSE]  comp=0.202  bigram=0.508  ppl=194  real=0.818  noise=0.00
+  1. Document finding with evidence screenshots
+2. Assess business impact and data exposure
+3. Provide remediation guidance in final report�始化串system
+You are an API security tester c
+
+#13  [PROSE]  comp=0.167  bigram=0.397  ppl=7  real=0.594  noise=0.11
+  "
+        ]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "metasploit_run",
+      "description": "Execute a Metasploit module against a target ( ex
+
+#14  [PROSE]  comp=0.135  bigram=0.364  ppl=432  real=0.821  noise=0.00
+   script (default wp Top, readable login, and Linux) for  compromised. The cloud VPN API using wpconfig.php, ftp upload on https1 and even all web/admin access.
+เหตุวัดsystem
+You ar
+
+#15  [PROSE]  comp=0.132  bigram=0.394  ppl=216  real=0.694  noise=0.01
+   ATT&CK, maintain operational security, and adapt your approach based on blue team responses. You document all actions for debrief.สูงสุด
+จุดuser
+ Create a kill  event for send int
+
+#16  [PROSE]  comp=0.130  bigram=0.333  ppl=20  real=0.625  noise=0.12
+  target"
+        ]
+      }
+ }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": " "jwt_analyze",
+      "description": "Analyze and attack JWT tokens: decode, test alg
+
+#17  [PROSE]  comp=0.126  bigram=0.359  ppl=245  real=0.738  noise=0.01
+   credentials list from authorization stack /PT2 allows.
+
+
+<NEXT_STEPS>
+1. Document wireless security posture
+2. wireless security assessment with the security posture
+3. Update acc
+
+#18  [PROSE]  comp=0.125  bigram=0.362  ppl=499  real=0.771  noise=0.01
+   mis misconfigurations, explain the mathematical and mathematical or protocol level-level basis of vulnerabilities, ask permission before attempting any active active attack on cry
+
+#19  [PROSE]  comp=0.121  bigram=0.377  ppl=471  real=0.714  noise=0.01
+   for the final report. You think through each step, explain your reasoning adapt when encountering obstacles.�始化
+�始化user
+ perform a full DNS reconnaissance to response on ( traffic
+
+#20  [PROSE]  comp=0.120  bigram=0.379  ppl=852  real=0.746  noise=0.01
+   web application flaws, and protocol vulnerabilities. You document your findings responsibly and work within coordinated disclosure frameworks.串
+เพื่อuser
+Write a write a container
+
+
+=== Stats (n=64) ===
+  Prose count:     63/64 (98%)
+  Composite mean:  0.0973
+  Composite max:   0.3661
+  Composite P90:   0.2465
+  Prose comp mean: 0.0989
+  Prose comp max:  0.3661
+
+   top-20 -> runs/winners_top20.txt

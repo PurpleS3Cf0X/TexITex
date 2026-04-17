@@ -1,0 +1,39 @@
+{
+  "_comment": "Phase 2: Scaling up DiT + coherence loss",
+  "_date": "2026",
+  "experiments": {
+    "P2-A": {
+      "name": "Large DiT 300 epochs + pos_channel (baseline scale-up)",
+      "ae_variant": "tokence_big_long",
+      "dit_depth": 12, "dit_hidden_dim": 512, "dit_num_heads": 8,
+      "num_epochs": 300,
+      "pos_channel": true,
+      "coherence_loss": false,
+      "log": "runs/dit_p2a.log",
+      "checkpoint_dir": "runs/ckpt_p2a"
+    },
+    "P2-B": {
+      "name": "Standard DiT 300 epochs + pos_channel + coherence loss",
+      "ae_variant": "tokence_big_long",
+      "dit_depth": 8, "dit_hidden_dim": 384, "dit_num_heads": 6,
+      "num_epochs": 300,
+      "pos_channel": true,
+      "coherence_loss": true,
+      "coherence_weight": 0.1,
+      "log": "runs/dit_p2b.log",
+      "checkpoint_dir": "runs/ckpt_p2b"
+    },
+    "P2-C": {
+      "name": "Large DiT 150 epochs + pos_channel (shorter run)",
+      "ae_variant": "tokence_big_long",
+      "dit_depth": 12, "dit_hidden_dim": 512, "dit_num_heads": 8,
+      "num_epochs": 150,
+      "pos_channel": true,
+      "coherence_loss": false,
+      "log": "runs/dit_p2c.log",
+      "checkpoint_dir": "runs/ckpt_p2c"
+    }
+  },
+  "winner": "P2-A (large DiT scale gives biggest improvement)",
+  "finding": "Scaling DiT to 57.8M params (depth=12, dim=512, heads=8) is more impactful than coherence loss"
+}

@@ -1,0 +1,62 @@
+{
+  "_comment": "Phase 5 Feature 2: 128-token sequences — non-square latent 16×32",
+  "_date": "April 2026",
+  "_status": "VQ-GAN training in progress; DiT training pending",
+
+  "motivation": "Current 64-token sequences capture ~4 words. 128 tokens allows full sentences, richer context, more coherent outputs.",
+
+  "architecture_changes": {
+    "seq_len": 128,
+    "token_grid": "8×16 (8 rows × 16 cols)",
+    "latent_shape": "[16ch, 16h, 32w] — non-square",
+    "patch_size": 2,
+    "num_patches": 128,
+    "VQGANEncoder": "8×16 grid → Upsample(2×) → 16×32 latent",
+    "VQGANDecoder": "16×32 → stride-2 conv → 8×16 → flatten → 128 tokens",
+    "Unpatch": "grid_h=8, grid_w=16 (non-square support added)",
+    "DiT": "input_h=16, input_w=32; num_patches=128; pos_map=(1,1,16,32); boundary_map=(1,1,16,32)"
+  },
+
+  "data": {
+    "dataset": "security",
+    "max_samples": 50000,
+    "seq_len": 128,
+    "model_name": "Qwen/Qwen2.5-1.5B"
+  },
+
+  "encoder": {
+    "ae_variant": "tokence_128",
+    "hidden_dim": 512,
+    "latent_channels": 16,
+    "latent_h": 16,
+    "latent_w": 32,
+    "codebook_size": 1024,
+    "codebook_dim": 16,
+    "epochs": 40,
+    "checkpoint_cache": "data_cache/vqgan_projector_tokence_128.pt"
+  },
+
+  "dit_architecture": {
+    "depth": 12,
+    "hidden_dim": 512,
+    "num_heads": 8,
+    "patch_size": 2,
+    "input_h": 16,
+    "input_w": 32,
+    "pos_channel": true,
+    "boundary_channel": true,
+    "self_cond": true,
+    "sequence_loss": true,
+    "sequence_weight": 0.5
+  },
+
+  "training_command": "/usr/bin/python3 run_poc.py --use_vqgan --ae_variant tokence_128 --backbone dit --data_source security --max_samples 50000 --num_epochs 300 --dit_depth 12 --dit_hidden_dim 512 --dit_num_heads 8 --dit_pos_channel --dit_self_cond --dit_boundary_channel --dit_sequence_loss --dit_sequence_weight 0.5 --checkpoint_dir runs/ckpt_p5_128tok",
+
+  "vqgan_training_command": "/usr/bin/python3 run_poc.py --use_vqgan --ae_variant tokence_128 --vqgan_epochs 40 --backbone dit --data_source security --max_samples 50000 --checkpoint_dir runs/ckpt_p5_128tok --roundtrip_only",
+
+  "logs": {
+    "vqgan": "runs/p5_128tok_vqgan.log"
+  },
+
+  "checkpoint_dir": "runs/ckpt_p5_128tok"
+}

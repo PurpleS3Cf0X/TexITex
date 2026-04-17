@@ -1,0 +1,116 @@
+{
+  "_comment": "Phase 4-A: Best configuration — self-conditioning + token boundary channel",
+  "_date": "April 2026",
+
+  "data": {
+    "dataset": "security (red-team + blue-team JSONL)",
+    "data_source": "security",
+    "data_paths": [
+      "/Volumes/R3D_1/redteam_project/data/final_v2/train.jsonl",
+      "/Volumes/R3D_1/blueteam_project/data/final/train.jsonl"
+    ],
+    "max_samples": 50000,
+    "seq_len": 64,
+    "model_name": "Qwen/Qwen2.5-1.5B"
+  },
+
+  "encoder": {
+    "type": "VQ-GAN",
+    "ae_variant": "tokence_big_long",
+    "hidden_dim": 512,
+    "latent_channels": 16,
+    "latent_size": 16,
+    "codebook_size": 1024,
+    "codebook_dim": 16,
+    "epochs": 40,
+    "lr": 3e-4,
+    "batch_size": 64,
+    "commit_weight": 0.25,
+    "cosine_weight": 0.5,
+    "tokence_weight": 0.5,
+    "tokence_negatives": 4096,
+    "roundtrip_token_accuracy": 0.898
+  },
+
+  "diffusion": {
+    "backbone": "DiT",
+    "num_timesteps": 1000,
+    "beta_schedule": "cosine",
+    "beta_start": 1e-4,
+    "beta_end": 0.02
+  },
+
+  "dit_architecture": {
+    "depth": 12,
+    "hidden_dim": 512,
+    "num_heads": 8,
+    "patch_size": 2,
+    "input_size": 16,
+    "mlp_ratio": 4.0,
+    "dropout": 0.0,
+    "total_params_M": 57.8,
+    "total_params_with_lstm_M": 58.0,
+    "lstm_params_K": 239.7,
+    "input_channels": 34,
+    "_channel_breakdown": "16 latent + 1 pos + 1 boundary + 16 self_cond = 34"
+  },
+
+  "features": {
+    "pos_channel": true,
+    "_pos_channel_note": "1D position 0→1 in row-major order, repeated over 2x2 patches",
+    "boundary_channel": true,
+    "_boundary_channel_note": "Binary grid marking the border of each 2x2 patch token block",
+    "self_cond": true,
+    "_self_cond_note": "50% dropout: feed previous x0_pred as extra 16ch input; zeros otherwise",
+    "sequence_loss": true,
+    "sequence_weight": 0.5,
+    "sequence_hidden": 128,
+    "_sequence_loss_note": "Causal LSTM predicts next token features; L1+cosine loss on x0_pred tokens"
+  },
+
+  "training": {
+    "num_epochs": 300,
+    "_best_epoch": 200,
+    "_best_epoch_note": "Peak quality at epoch 200; overtraining observed beyond this",
+    "batch_size": 64,
+    "lr": 1e-4,
+    "optimizer": "AdamW",
+    "weight_decay": 1e-4,
+    "grad_clip": 1.0,
+    "ema_decay": 0.999,
+    "save_every": 10,
+    "checkpoint_dir": "runs/ckpt_p4a"
+  },
+
+  "inference": {
+    "sampler": "DDIM",
+    "ddim_steps": 200,
+    "_ddim_steps_note": "Sweet spot 200; mode collapse at >=300 steps due to self-cond feedback loop",
+    "use_ddim": true,
+    "clip_sigma": 3.0
+  },
+
+  "results": {
+    "_eval_note": "All metrics measured from runs/ckpt_p4a/best.pt (epoch 200), 64 samples, 200 DDIM steps",
+    "_eval_script": "python gen_winners.py --ckpt runs/ckpt_p4a --ddim 200 --num 64",
+    "_eval_log": "runs/p4a_best_eval.log",
+    "composite_score_mean": 0.104,
+    "composite_score_best_sample": 0.372,
+    "composite_score_P90": 0.212,
+    "bigram_coherence_mean": 0.272,
+    "bigram_coherence_best_sample": 0.831,
+    "real_word_ratio_mean": 0.683,
+    "real_word_ratio_best_sample": 0.864,
+    "median_ppl": 197,
+    "prose_ratio": 1.0,
+    "_best_sample": "a simulated adversary engagement. Your objectives include testing detection capabilities, exercising incident response, identifying security gaps. You employ realistic adversary TTPs mapped to MITRE ATT&CK, maintain operational security, and adapt your approach based on blue team responses.",
+    "eval_metric": "composite = bigram_coherence × real_word_ratio × 1/(1+log(PPL)/5)",
+    "_ppl_note": "Raw PPL is gameable by JSON boilerplate; is_prose() filter applied before PPL",
+    "_epoch300_note": "final.pt (epoch 300) has lower composite mean=0.097, confirming epoch 200 is best"
+  },
+
+  "ablation_context": {
+    "P4-A_vs_P4-B": "P4-A (seq_weight=0.5) >> P4-B (seq_weight=0.2); bigram 0.379 vs 0.030",
+    "critical_finding": "sequence_weight=0.5 is non-negotiable; 0.2 causes URL/HTTP mode collapse"
+  }
+}
