@@ -33,7 +33,19 @@ Because diffusion generates **all pixels at once**, the entire 64-token sentence
 
 ---
 
-## 📊 Best Results (Phase 4-A, Epoch 200)
+## 📊 Evaluation Results Dashboard
+
+<p align="center">
+  <img src="assets/fig_results_dashboard.png" alt="Results Dashboard" width="900"/>
+</p>
+
+> **Top row:** key metric gauges — composite, bigram coherence, real-word ratio, VQ-GAN roundtrip accuracy  
+> **Middle row:** score distribution across all 64 samples + bigram vs composite scatter plot  
+> **Bottom row:** quality vs training epoch (best at 200, overtrain by 250) + quality vs DDIM steps (collapse cliff at ≥300)
+
+---
+
+## 📝 Best Results (Phase 4-A, Epoch 200)
 
 | Metric | Value |
 |--------|-------|
@@ -138,7 +150,7 @@ Because diffusion generates **all pixels at once**, the entire 64-token sentence
 ## 🖊️ Example Outputs (Top 5 Samples)
 
 <p align="center">
-  <img src="assets/fig_samples.png" alt="Generated Samples" width="860"/>
+  <img src="assets/fig_top5_samples.png" alt="Top 5 Generated Samples" width="900"/>
 </p>
 
 ---
